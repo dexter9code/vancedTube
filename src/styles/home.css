@@ -1,0 +1,7 @@
+.home {
+    display: flex;
+}
+
+.home__main {
+    flex: 7;
+}

@@ -1,0 +1,68 @@
+.sidenav {
+    flex: 1;
+    background-color: #202020;
+    height: 100vh;
+    color: #f7f7f7;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: sticky;
+    top: 0;
+}
+
+.sidenav__contents{
+    padding: 18px 26px;
+}
+
+.sidenav__contents_logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 16px;
+}
+
+.sidenav__contents_logo >h2 {
+    font-weight: 800;
+    text-transform: capitalize; 
+    font-size: medium;
+}
+
+.sidenav__logo {
+    height: 30px;
+}
+
+.sidenav__items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.sidenav__line {
+    margin: 10px 0px;
+    border: 0.5px solid #373737;
+}
+
+.sidenav__login{
+
+}
+
+.btn__login {
+    padding: 5px 8px;
+    background-color: transparent;
+    border: 1px solid #373737;
+    border-radius: 14px;
+    color: #3ea6ff;
+    font-weight: 500;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.sidenav__title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #f7f7f7;
+    margin-bottom: 8px;
+}
