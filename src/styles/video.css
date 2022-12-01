@@ -1,0 +1,12 @@
+.video {
+    display: flex;
+    gap: 24px;
+}
+
+.video__content {
+    flex: 5;
+}
+
+.video__recommendation {
+    flex: 2;
+}
