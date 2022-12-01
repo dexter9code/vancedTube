@@ -1,22 +1,22 @@
-import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import NavbarComp from "../components/sideNav/NavbarComp";
 import SideNavComp from "../components/sideNav/SideNavComp";
 import "../styles/rootlayout.css";
+import { useSelector } from "react-redux";
+import { RootState } from "../store/store";
 
 const RootLayout: React.FC = () => {
-  const [isLight, setIsLight] = useState(false);
-
-  const changeDarkHandler = () => {
-    setIsLight((prevValue) => !prevValue);
-  };
+  const isLight = useSelector((state: RootState) => state.theme.activeLight);
+  console.log(isLight);
   return (
     <>
-      <div className={`home ${isLight && `home__light`}`}>
-        <SideNavComp changeDarkHandler={changeDarkHandler} isLight={isLight} />
-        <main className="home__main">
-          <NavbarComp isLight={isLight} />
-          <Outlet />
+      <div className={`root ${isLight && `layout__light`}`}>
+        <SideNavComp />
+        <main className="root__main">
+          <NavbarComp />
+          <div className="root__wrapper">
+            <Outlet />
+          </div>
         </main>
       </div>
     </>

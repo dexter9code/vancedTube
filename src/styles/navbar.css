@@ -12,6 +12,11 @@
     height: 100%;
     padding: 0px 20px;
     position: relative;
+    background-color: #202020;
+}
+
+.navbar__contents_light {
+    background-color: #fff;
 }
 
 .navbar__actions {

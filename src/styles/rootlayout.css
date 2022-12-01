@@ -1,12 +1,15 @@
-.home {
+.root {
     display: flex;
     background-color: #202020;
 }
 
-.home__light{
+.layout__light{
     background-color: #fff;
 }
 
-.home__main {
+.root__main {
     flex: 7;
+}
+.root__wrapper {
+    padding: 22px 50px;
 }
