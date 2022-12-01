@@ -17,9 +17,14 @@ import { AiOutlineCompass, AiOutlineTrophy } from "react-icons/ai";
 import { SiYoutubegaming } from "react-icons/si";
 import { HiOutlineUserCircle } from "react-icons/hi";
 
-const SideNavComp: React.FC = () => {
+interface AppProps {
+  changeDarkHandler: () => void;
+  isLight: boolean;
+}
+
+const SideNavComp: React.FC<AppProps> = ({ changeDarkHandler, isLight }) => {
   return (
-    <main className="sidenav">
+    <main className={`sidenav ${isLight && `sidenav__dark`}`}>
       <div className="sidenav__contents">
         <div className="sidenav__contents_logo">
           <img src={logo} alt="logo" className="sidenav__logo" />
@@ -89,7 +94,7 @@ const SideNavComp: React.FC = () => {
           <MdHelpOutline size={18} />
           <p>help</p>
         </div>
-        <div className="sidenav__items">
+        <div className="sidenav__items" onClick={changeDarkHandler}>
           <MdOutlineFeedback size={18} />
           <p>send feedback</p>
         </div>

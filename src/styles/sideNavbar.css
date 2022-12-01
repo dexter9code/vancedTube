@@ -9,6 +9,11 @@
     top: 0;
 }
 
+.sidenav__dark {
+    background-color: #fff;
+    color: #202020;
+}
+
 .sidenav__contents{
     padding: 18px 26px;
 }
