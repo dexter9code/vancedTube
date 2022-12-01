@@ -14,10 +14,9 @@ const HomePage: React.FC = () => {
     <div className={`home ${isLight && `home__light`}`}>
       <SideNavComp changeDarkHandler={changeDarkHandler} isLight={isLight} />
       <main className="home__main">
-        <NavbarComp />
+        <NavbarComp isLight={isLight} />
         <div>video card</div>
       </main>
-      <h1>e</h1>
     </div>
   );
 };

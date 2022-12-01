@@ -54,7 +54,7 @@ const SideNavComp: React.FC<AppProps> = ({ changeDarkHandler, isLight }) => {
         <div className="sidenav__line" />
         <div className="sidenav__login">
           <p>Sign in to like videos, comment, and subscribe.</p>
-          <button className="btn__login">
+          <button className={`btn__login ${isLight && `btn__login_light`}`}>
             <HiOutlineUserCircle size={18} />
             Sign in
           </button>

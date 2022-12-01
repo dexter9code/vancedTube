@@ -65,6 +65,14 @@
     gap: 3px;
 }
 
+.btn__login:hover{
+    background-color: #a0ecff;
+}
+
+.btn__login_light {
+    border: 0.5px solid lightgray;
+}
+
 .sidenav__title {
     font-size: 15px;
     font-weight: 600;
