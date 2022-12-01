@@ -19,6 +19,7 @@ import { HiOutlineUserCircle } from "react-icons/hi";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../../store/store";
 import { toggleLightMode } from "../../reducers/themeSlice/themeSlice";
+import { Link } from "react-router-dom";
 
 const SideNavComp: React.FC = () => {
   const light = useSelector((state: RootState) => state.theme.activeLight);
@@ -26,10 +27,12 @@ const SideNavComp: React.FC = () => {
   return (
     <main className={`sidenav ${light && `sidenav__dark`}`}>
       <div className="sidenav__contents">
-        <div className="sidenav__contents_logo">
-          <img src={logo} alt="logo" className="sidenav__logo" />
-          <h2>vancedTube</h2>
-        </div>
+        <Link to={`/`} style={{ textDecoration: "none", color: "inherit" }}>
+          <div className="sidenav__contents_logo">
+            <img src={logo} alt="logo" className="sidenav__logo" />
+            <h2>vancedTube</h2>
+          </div>
+        </Link>
         <div className="sidenav__items">
           <MdOutlineHome size={20} />
           <p>home</p>
