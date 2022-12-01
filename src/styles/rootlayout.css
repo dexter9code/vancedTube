@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    background-color: #202020;
+}
+
+.home__light{
+    background-color: #fff;
+}
+
+.home__main {
+    flex: 7;
+}
