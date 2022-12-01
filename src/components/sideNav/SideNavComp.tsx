@@ -57,10 +57,12 @@ const SideNavComp: React.FC = () => {
         <div className="sidenav__line" />
         <div className="sidenav__login">
           <p>Sign in to like videos, comment, and subscribe.</p>
-          <button className={`btn__login ${light && `btn__login_light`}`}>
-            <HiOutlineUserCircle size={20} />
-            Sign in
-          </button>
+          <Link to={`/auth/login`}>
+            <button className={`btn__login ${light && `btn__login_light`}`}>
+              <HiOutlineUserCircle size={20} />
+              Sign in
+            </button>
+          </Link>
         </div>
         <div className="sidenav__line" />
         <h2 className="sidenav__title">Explore</h2>
