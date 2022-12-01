@@ -1,0 +1,55 @@
+.Rec__card {
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.Rec__thumbnail {
+  width: 100%;
+  height: 140px;
+  background-color: #999;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.Rec__details {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+}
+
+.Rec_channel__thumbnail {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #999;
+}
+
+.Rec__details_about {
+  color: white;
+}
+
+.Rec__details_about_light {
+  color: #000;
+}
+
+.Rec__details_about > h1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Rec__details_about > h2 {
+  font-size: 14px;
+  /* color: white; */
+  margin: 8px 0px;
+}
+
+.Rec__details_about > p {
+  font-size: 14px;
+  /* color: white; */
+}
+.Rec__details_about > p > span {
+  font-size: 5px;
+  vertical-align: middle;
+}

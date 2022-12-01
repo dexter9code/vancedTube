@@ -1,82 +1,87 @@
 .sidenav {
-    flex: 1;
-    background-color: #202020;
-    height: 100vh;
-    color: #f7f7f7;
-    font-size: 14px;
-    text-transform: capitalize;
-    position: sticky;
-    top: 0;
+  flex: 1;
+  background-color: #202020;
+  height: 100vh;
+  color: #f7f7f7;
+  font-size: 14px;
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
 }
 
 .sidenav__dark {
-    background-color: #fff;
-    color: #202020;
+  background-color: #fff;
+  color: #202020;
 }
 
-.sidenav__contents{
-    padding: 18px 26px;
+.sidenav__contents {
+  padding: 18px 26px;
 }
 
 .sidenav__contents_logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
-.sidenav__contents_logo >h2 {
-    font-weight: 800;
-    text-transform: capitalize; 
-    font-size: medium;
+.sidenav__contents_logo > h2 {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: medium;
 }
 
 .sidenav__logo {
-    height: 30px;
+  height: 30px;
 }
 
 .sidenav__items {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    cursor: pointer;
-    margin: 18px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  padding: 7.5px 0px;
+  margin: 3px 0px;
+  border-radius: 8px;
+}
+
+.sidenav__items:hover {
+  background-color: #373737;
 }
 
 .sidenav__line {
-    margin: 14px 0px;
-    border: 0.5px solid #373737;
+  margin: 14px 0px;
+  border: 0.5px solid #373737;
 }
 
-.sidenav__login{
-    
+.sidenav__login {
 }
 
 .btn__login {
-    padding: 5px 8px;
-    background-color: transparent;
-    border: 1px solid #373737;
-    border-radius: 14px;
-    color: #3ea6ff;
-    font-weight: 500;
-    margin-top: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 3px;
+  padding: 5px 8px;
+  background-color: transparent;
+  border: 1px solid #373737;
+  border-radius: 14px;
+  color: #3ea6ff;
+  font-weight: 500;
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
-.btn__login:hover{
-    background-color: #a0ecff;
+.btn__login:hover {
+  background-color: #a0ecff;
 }
 
 .btn__login_light {
-    border: 0.5px solid lightgray;
+  border: 0.5px solid lightgray;
 }
 
 .sidenav__title {
-    font-size: 15px;
-    font-weight: 600;
-    color: #f7f7f7;
-    margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f7f7f7;
+  margin-bottom: 8px;
 }
