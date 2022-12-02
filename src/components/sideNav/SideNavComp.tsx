@@ -57,7 +57,7 @@ const SideNavComp: React.FC = () => {
         <div className="sidenav__line" />
         <div className="sidenav__login">
           <p>Sign in to like videos, comment, and subscribe.</p>
-          <Link to={`/auth/login`}>
+          <Link to={`/auth/login`} style={{ textDecoration: "none" }}>
             <button className={`btn__login ${light && `btn__login_light`}`}>
               <HiOutlineUserCircle size={20} />
               Sign in

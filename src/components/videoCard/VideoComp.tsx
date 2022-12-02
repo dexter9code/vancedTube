@@ -2,10 +2,14 @@ import "../../styles/videoComp.css";
 import { BiLike, BiDislike } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
 import { MdOutlineDownload, MdPlaylistAdd } from "react-icons/md";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
+
 const VideoComp: React.FC = () => {
+  const isLight = useSelector((state: RootState) => state.theme.activeLight);
   return (
     <>
-      <div className="video__content_video">
+      <div className={`video__content_video`}>
         <iframe
           src="https://www.youtube.com/embed/940zkaSoXFE"
           width={"100%"}
@@ -16,8 +20,14 @@ const VideoComp: React.FC = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <h1 className="video__content_title">video-title</h1>
-      <div className="video__details">
+      <h1
+        className={`video__content_title ${
+          isLight && `video__content_title_light`
+        }`}
+      >
+        video-title
+      </h1>
+      <div className={`video__details ${isLight && `video__details_light`}`}>
         <div className="channel__info">
           <img
             className="channel__thumbnail"
@@ -53,7 +63,11 @@ const VideoComp: React.FC = () => {
         </div>
       </div>
       <div className="video__line" />
-      <div className="video__description">
+      <div
+        className={`video__description ${
+          isLight && `video__description_light`
+        }`}
+      >
         “Studying whether there’s life on Mars or studying how the universe
         began, there’s something magical about pushing back the frontiers of
         knowledge. That’s something that is almost part of being human, and I’m

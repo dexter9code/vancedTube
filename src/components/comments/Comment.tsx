@@ -1,9 +1,12 @@
 import "../../styles/comment.css";
 import Comments from "./Comments";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
 
 const Comment: React.FC = () => {
+  const isLight = useSelector((state: RootState) => state.theme.activeLight);
   return (
-    <div className="comment">
+    <div className={`comment ${isLight && `comment__light`}`}>
       <div className="comment__actions">
         <img
           className="comment__channel_thumbnail"

@@ -2,6 +2,10 @@
   color: #f7f7f7;
 }
 
+.comment__light {
+  color: #000;
+}
+
 .comment__actions {
   display: flex;
   align-items: center;
